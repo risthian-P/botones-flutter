@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   // URLs de las aplicaciones
   static const String material_3 = 'https://flutter.github.io/samples/web/material_3_demo/';
   static const String simplistic_editor_url = 'https://flutter.github.io/samples/web/simplistic_editor/';
-  static const String Game_template_url = 'https://flutter.github.io/samples/web/game_template/#/play';
+  static const String Game_template_url = 'https://flutter.github.io/samples/web/game_template/';
 
   // Función para abrir URLs usando url_launcher
   void _launchURL(String url) async {
