@@ -5,9 +5,9 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // URLs de las aplicaciones
-  static const String facebookUrl = 'https://flutter.github.io/samples/web/material_3_demo/';
-  static const String twitterUrl = 'https://flutter.github.io/samples/web/simplistic_editor/';
-  static const String instagramUrl = 'https://flutter.github.io/samples/web/game_template/#/play';
+  static const String material_3 = 'https://flutter.github.io/samples/web/material_3_demo/';
+  static const String simplistic_editor_url = 'https://flutter.github.io/samples/web/simplistic_editor/';
+  static const String Game_template_url = 'https://flutter.github.io/samples/web/game_template/#/play';
 
   // Función para abrir URLs usando url_launcher
   void _launchURL(String url) async {
@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Abrir Aplicaciones',
+      title: 'Aplicacion finañ',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Abrir Aplicaciones'),
+          title: Text('Redireccion de aplicaciones'),
         ),
         body: Center(
           child: Column(
@@ -32,23 +32,23 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               ElevatedButton(
                 onPressed: () {
-                  _launchURL(facebookUrl);
+                  _launchURL(material_3);
                 },
-                child: Text('Facebook'),
+                child: Text('Editor de material'),
               ),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  _launchURL(twitterUrl);
+                  _launchURL(simplistic_editor_url);
                 },
-                child: Text('Twitter'),
+                child: Text('Editor simple'),
               ),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  _launchURL(instagramUrl);
+                  _launchURL(Game_template_url);
                 },
-                child: Text('Instagram'),
+                child: Text('Game template'),
               ),
             ],
           ),
